@@ -114,9 +114,9 @@ form {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+/* se em foco add */
 .item input:focus + label::before {
-  outline: #a52c6b;
+  outline: 2px solid #a52c6b;
 }
 
 .item button {
