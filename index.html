@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <form>
+        <h1>Compras da semana</h1>
+
+        <input type="text" id="itemInput" placeholder="Adicione um novo item" />
+        <button class="add-btn">Adicionar item</button>
+
+        <div class="item">
+          <input type="checkbox" name="" id="cheched" />
+          <label for="cheched">Pão de forma</label>
+          <button><img src="./assets/bin.svg" alt="" /></button>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" name="" id="cheched" />
+          <label for="cheched">Café preto</label>
+          <button><img src="./assets/bin.svg" alt="" /></button>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" name="" id="cheched" />
+          <label for="cheched">Suco de laranja</label>
+          <button><img src="./assets/bin.svg" alt="" /></button>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" name="" id="cheched" />
+          <label for="cheched">Bolacha</label>
+          <button><img src="./assets/bin.svg" alt="" /></button>
+        </div>
+
+      </form>
+
+      <div class="alert">
+        <img src="./assets/warning.svg" alt="" />
+        <span>O item foi removido da lista</span>
+        <button><img src="./assets/delete.svg" alt="" /></button>
+      </div>
+    </div>
+  </body>
+</html>
