@@ -15,11 +15,17 @@
   </head>
   <body>
     <div id="app">
-      <form >
+      <form>
         <h1>Compras da semana</h1>
 
-        <input type="text" id="itemInput" placeholder="Adicione um novo item" />
-        <button class="add-btn">Adicionar item</button>
+        <div id="add-list">
+          <input
+            type="text"
+            id="itemInput"
+            placeholder="Adicione um novo item"
+          />
+          <button class="add-btn">Adicionar item</button>
+        </div>
 
         <div id="itemList">
           <!-- Os itens serão adicionados dinamicamente aqui -->
@@ -28,25 +34,33 @@
         <div class="item">
           <input type="checkbox" name="" id="cheched" />
           <label for="cheched">Pão de forma</label>
-          <button class="delete-btn"><img src="./assets/bin.svg" alt="" /></button>
+          <button class="delete-btn">
+            <img src="./assets/bin.svg" alt="" />
+          </button>
         </div>
 
         <div class="item">
           <input type="checkbox" name="" id="cheched" />
           <label for="cheched">Café preto</label>
-          <button class="delete-btn"><img src="./assets/bin.svg" alt="" /></button>
+          <button class="delete-btn">
+            <img src="./assets/bin.svg" alt="" />
+          </button>
         </div>
 
         <div class="item">
           <input type="checkbox" name="" id="cheched" />
           <label for="cheched">Suco de laranja</label>
-          <button class="delete-btn"><img src="./assets/bin.svg" alt="" /></button>
+          <button class="delete-btn">
+            <img src="./assets/bin.svg" alt="" />
+          </button>
         </div>
 
         <div class="item">
           <input type="checkbox" name="" id="cheched" />
           <label for="cheched">Bolacha</label>
-          <button class="delete-btn"><img src="./assets/bin.svg" alt="" /></button>
+          <button class="delete-btn">
+            <img src="./assets/bin.svg" alt="" />
+          </button>
         </div>
       </form>
 
