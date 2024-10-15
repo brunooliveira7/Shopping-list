@@ -21,15 +21,16 @@ body {
   padding: 2rem; /* para evitar que encoste nas bordas em telas menores */
 }
 
+/* responsividade */
+#app {
+  width: 100%;
+  max-width: 90rem; /* limite de largura máxima */
+}
+
 #add-list {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem; 
-}
-
-#app {
-  width: 100%;
-  max-width: 70rem; /* limite de largura máxima */
 }
 
 form {
