@@ -21,8 +21,8 @@ form.onsubmit = (event) => {
 
   const newItem = document.createElement("div");
   newItem.classList.add("item");
-  newItem.innerHTML = ` <input type="checkbox" name="" id="cheched" />
-                        <label for="cheched">Pão de forma</label>
+  newItem.innerHTML = ` <input type="checkbox" name="" id="checked" />
+                        <label for="checked">Pão de forma</label>
                         <button><img src="./assets/bin.svg" alt="" /></button>`;
 
   itemList.appendChild(newItem);
