@@ -49,7 +49,6 @@ h1 {
   flex: 1;
   height: 4.4rem;
   padding: 1.8rem;
-  
   align-items: center;
 
   border-radius: 1.2rem;
@@ -73,8 +72,7 @@ h1 {
   background: #ca3884;
   cursor: pointer;
   height: 4.4rem;
-  white-space: nowrap; /* Evita quebra de linha no texto do botão */
-}
+  }
 
 .add-btn:hover {
   background: #a52c6b;
