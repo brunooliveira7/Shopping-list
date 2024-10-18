@@ -28,8 +28,5 @@ form.onsubmit = (event) => {
   itemList.appendChild(newItem);
 
   itemInput.value = "";
-
-  newItem.querySelector(".delete-btn").addEventListener("click", () => {
-    newItem.remove();
   });
 };
