@@ -19,28 +19,24 @@
 
       <div id="add-list">
         <input type="text" id="itemInput" placeholder="Adicione um novo item" />
-        <button class="add-item">Adicionar item</button>
+        <button onclick="addItem()" class="add-item">Adicionar item</button>
       </div>
 
       <table>
-        <tbody id="item-list">
-
+        <tbody id="tbody">
           <tr class="itemAdded">
-
             <td class="listItem">
               <input type="checkbox" id="checked" />
               <label for="checked">Arroz branco</label>
             </td>
 
             <td class="delete">
-              <button class="delete-btn">
+              <button onclick="deleteItem()" class="delete-btn">
                 <img src="./assets/bin.svg" alt="Delete item" />
               </button>
             </td>
           </tr>
-
         </tbody>
-
       </table>
 
       <button class="alert">

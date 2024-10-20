@@ -131,8 +131,6 @@ table input:focus + label::before{
   outline: 2px solid #ca3884;
 }
 
-
-
 .delete button {
   background: none;
   border: none;
