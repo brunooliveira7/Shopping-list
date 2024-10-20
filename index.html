@@ -15,54 +15,33 @@
   </head>
   <body>
     <div id="app">
-      <form>
-        <h1>Compras da semana</h1>
+      <h1>Compras da semana</h1>
 
-        <div id="add-list">
-          <input
-            type="text"
-            id="itemInput"
-            placeholder="Adicione um novo item"
-          />
-          <button class="add-btn">Adicionar item</button>
-        </div>
+      <div id="add-list">
+        <input type="text" id="itemInput" placeholder="Adicione um novo item" />
+        <button class="add-item">Adicionar item</button>
+      </div>
 
-        <div id="itemList">
-          <!-- Os itens serão adicionados dinamicamente aqui -->
-        </div>
+      <table>
+        <tbody id="item-list">
 
-        <div class="item">
-          <input type="checkbox" name="" id="checked" />
-          <label for="checked">Pão de forma</label>
-          <button class="delete-btn">
-            <img src="./assets/bin.svg" alt="" />
-          </button>
-        </div>
+          <tr class="itemAdded">
 
-        <div class="item">
-          <input type="checkbox" name="" id="checked" />
-          <label for="checked">Café preto</label>
-          <button class="delete-btn">
-            <img src="./assets/bin.svg" alt="" />
-          </button>
-        </div>
+            <td class="listItem">
+              <input type="checkbox" id="checked" />
+              <label for="checked">Arroz branco</label>
+            </td>
 
-        <div class="item">
-          <input type="checkbox" name="" id="cheched" />
-          <label for="checked">Suco de laranja</label>
-          <button class="delete-btn">
-            <img src="./assets/bin.svg" alt="" />
-          </button>
-        </div>
+            <td class="delete">
+              <button class="delete-btn">
+                <img src="./assets/bin.svg" alt="Delete item" />
+              </button>
+            </td>
+          </tr>
 
-        <div class="item">
-          <input type="checkbox" name="" id="checked" />
-          <label for="checked">Bolacha</label>
-          <button class="delete-btn">
-            <img src="./assets/bin.svg" alt="" />
-          </button>
-        </div>
-      </form>
+        </tbody>
+
+      </table>
 
       <button class="alert">
         <img src="./assets/warning.svg" alt="" />
