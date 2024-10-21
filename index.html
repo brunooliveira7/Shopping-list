@@ -14,32 +14,31 @@
     <script src="./main.js" defer></script>
   </head>
   <body>
-    <div id="app">
+    <div id="content">
       <h1>Compras da semana</h1>
 
-      <div id="add-list">
-        <input type="text" id="itemInput" placeholder="Adicione um novo item" />
-        <button onclick="product.addItem()" class="add-item">Adicionar item</button>
+      <div id="content-add-item">
+        <input
+          type="text"
+          id="input-new-item"
+          placeholder="Adicione um novo item"
+        />
+        <button class="btn-new-item">Adicionar item</button>
       </div>
 
-      <table>
-        <tbody id="tbody">
-
-          <tr class="itemAdded">
-            <td>
-              <input type="checkbox" id="checked" />
-              <span>Arroz branco</span>
-            </td>
-
-            <td>
-              <button onclick="product.deleteItem()" class="delete-item">
-                <img src="./assets/bin.svg" alt="Delete item" />
-              </button>
-            </td>
-            
-          </tr>
-        </tbody>
-      </table>
+      <div id="content-body">
+        <ul>
+          <li>
+            <input type="checkbox" id="checked" />
+            <span>Arroz branco</span>
+          </li>
+          <li>
+            <button class="remove">
+              <img src="./assets/bin.svg" alt="Delete item" />
+            </button>
+          </li>
+        </ul>
+      </div>
 
       <button class="alert">
         <img src="./assets/warning.svg" alt="" />
