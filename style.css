@@ -78,7 +78,7 @@ h1 {
   width: 100%;
 }
 
-.content-body ul {
+.content-body ol {
   list-style-type: none;
   display: flex;
   align-items: center;
