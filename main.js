@@ -10,7 +10,11 @@ function newItem() {
     alert("Please enter a non-empty item");
     return;
   }
-  //duplicate else if
+  //no duplicate
+  else if (validadeIfExistsNewItem()) {
+    alert("Item already exists");
+    return;
+  }
 
   //increment to localStorage - convert string to array or empty array
   else {
@@ -23,6 +27,15 @@ function newItem() {
     localStorage.setItem(localStorageKey, JSON.stringify(values));
     showValues();
   }
+   //clear input
+   input.value = "";
+}
+
+function validadeIfExistsNewItem() {
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+  let inputValue = document.querySelector("#input-new-item").value;
+  let exists = values.find((x) => x.name == inputValue);
+  return !exists ? false : true;
 }
 
 //show the values ​​in the list
@@ -42,19 +55,35 @@ function showValues() {
                 <input type="checkbox" id="checked"/>
                 <span>${values[i]["name"]}</span>
              </li>    
-             </li>
-                <button class="remove" onclick="removeItem(${i})">
+             <li>
+                <button class="remove" onclick="removeItem('${values[i]["name"]}')"> 
                     <img src="./assets/bin.svg" alt="Delete item" />
                 </button>
              </li>
          </ol>
       `;
+    //increments values ​​to display in the list - so it doesn't look like just one in the list
     list.innerHTML += listItem;
   }
 }
 
+//removes items from the list when the button is clicked
+//data = item name
+function removeItem(data) {
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+
+  //search for the value and its index if it is equal to the parameter
+  let index = values.findIndex((x) => x.name == data);
+
+  //delete
+  values.splice(index, 1);
+
+  //remove item from localStorage only
+  localStorage.setItem(localStorageKey, JSON.stringify(values));
+
+  //updates and removes the item from the list
+  showValues();
+}
+
 //keep items on page refresh
 showValues();
-
-//removes items from the list when the button is clicked
-function removeItem() {}
