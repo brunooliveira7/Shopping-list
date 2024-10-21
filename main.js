@@ -35,7 +35,7 @@ function showValues() {
         let = listItem = `
          <ul id="to-do-list">
              <li>
-                <input type="checkbox" id="checked-${i}" />
+                <input type="checkbox" id="checked"/>
                 <span>${values[i]["name"]}</span>
              </li>    
              </li>
