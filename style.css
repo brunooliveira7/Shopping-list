@@ -27,7 +27,7 @@ body {
   max-width: 90rem; /* limite de largura máxima */
 }
 
-#content-add-item {
+.content-add-item {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
@@ -74,11 +74,11 @@ h1 {
   background: #a52c6b;
 }
 
-#content-body {
+.content-body {
   width: 100%;
 }
 
-#content-body ul {
+.content-body ul {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -154,7 +154,7 @@ button.alert {
 }
 
 @media (max-width: 600px) {
-  #content-add-item {
+  .content-add-item {
     flex-direction: column; /* Coloca o input e botão em colunas em telas menores */
   }
 

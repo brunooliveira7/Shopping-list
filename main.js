@@ -24,7 +24,7 @@ function newItem() {
 //show values
 function showValues() {
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
-    let list = document.getElementById("to-do-list");
+    let list = document.querySelector(".content-body");
 
     //start empty list
     list.innerHTML = "";
@@ -33,7 +33,6 @@ function showValues() {
     for(let i = 0; i < values.length; i++) {
         //get the current element and its name
         let = listItem = `
-        <div id="content-body">
          <ul id="to-do-list">
              <li>
                 <input type="checkbox" id="checked-${i}" />
@@ -45,7 +44,6 @@ function showValues() {
                 </button>
              </li>
          </ul>
-      </div>
       `;
       list.innerHTML += listItem;
     }
