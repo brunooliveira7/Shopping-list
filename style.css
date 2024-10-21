@@ -97,7 +97,7 @@ table input#checked {
   cursor: pointer;
 }
 
-table label {
+table span {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -105,7 +105,7 @@ table label {
 }
 
 /* add novo check - no conteúdo do label*/
-table label::before {
+table span::before {
   content: "";
   width: 1.6rem;
   height: 1.6rem;
@@ -116,18 +116,18 @@ table label::before {
   background: #fff;
 }
 
-table input:checked + label::before {
+table input:checked + span::before {
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='15' height='15' rx='5.5' fill='%23CA3884'/%3E%3Crect x='1' y='1' width='15' height='15' rx='5.5' stroke='%23CA3884'/%3E%3Cpath d='M5 9.5L6.75 11.25L12 5.75' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 /* se em foco add */
-table input:focus + label::before{
+table input:focus + span::before{
   outline: 2px solid #ca3884;
 }
 
-.delete button {
+button.delete-item {
   background: none;
   border: none;
   cursor: pointer;

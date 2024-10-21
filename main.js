@@ -11,9 +11,10 @@ class Product {
     if (this.validateData(item)) {
       this.addArrayItem(item);
     }
-    console.log(this.arrayItems);
+    console.log(item);
   }
 
+  
   // adiciona dentro do array o item
   addArrayItem(item) {
     this.arrayItems.push(item);
@@ -36,8 +37,8 @@ class Product {
 
     if (item.itemName == "") {
       message += "Informe o nome do produto";
-    } 
-    
+    }
+
     if (message != "") {
       alert(message);
       return false;
