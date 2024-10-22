@@ -129,7 +129,7 @@ button.remove {
   cursor: pointer;
 }
 
-.alert-error {
+.alert-message {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,19 +153,19 @@ button.remove {
   transition: transform 0.5s;
 }
 
-.alert-error #text {
+.alert-message #text {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.alert-error .close {
+.alert-message .close {
   border: none;
   background: #c93847;
   cursor: pointer;
 }
 
-.alert-error.open {
+.alert-message .open {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);

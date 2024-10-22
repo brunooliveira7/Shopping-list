@@ -84,7 +84,40 @@ function removeItem(data) {
 
   //updates and removes the item from the list
   showValues();
+
+  showAlert();
 }
+
+function showAlert() {
+  const alertMessage = document.querySelector(".alert-message");
+
+  // Add the 'open' class to show the alert
+  alertMessage.classList.add(".open");
+
+  // Ensure visibility
+  alertMessage.style.visibility = "visible";
+  alertMessage.style.opacity = "1";
+
+
+  // Hide the alert after 3 seconds
+  setTimeout(() => {
+    alertMessage.classList.remove("open");
+    // Reset visibility after closing
+    alertMessage.style.visibility = "hidden";
+    alertMessage.style.opacity = "0";
+  }, 3000);
+}
+
+// Function to close the alert when the close button is clicked
+document.querySelector(".alert-message .close").addEventListener("click", function () {
+  const alertMessage = document.querySelector(".alert-message");
+  
+  if (alertMessage) {
+    alertMessage.classList.remove("open");
+    alertMessage.style.visibility = "hidden";
+    alertMessage.style.opacity = "0";
+  }
+});
 
 //keep items on page refresh
 showValues();
