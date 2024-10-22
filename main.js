@@ -25,6 +25,7 @@ function newItem() {
     });
     //converts the array to a string value object
     localStorage.setItem(localStorageKey, JSON.stringify(values));
+
     showValues();
   }
    //clear input
@@ -75,7 +76,7 @@ function removeItem(data) {
   //search for the value and its index if it is equal to the parameter
   let index = values.findIndex((x) => x.name == data);
 
-  //delete
+  //delete 1 item from the list
   values.splice(index, 1);
 
   //remove item from localStorage only
