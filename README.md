@@ -23,10 +23,16 @@ Projeto desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
+- Figma
 
 ## 💻 Projeto
 
 Adicionar e remove produtos, sendo que os itens podem ser marcados como comprados.
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/A2ZlTw9cJPTAfC4tO8fDuj/Lista-de-compras-(Community)?node-id=3-376&node-type=canvas&m=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
 
 ## :memo: Licença
 
