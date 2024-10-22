@@ -18,13 +18,13 @@ body {
   justify-content: center;
   flex-direction: column;
   font-size: 1.6rem;
-  padding: 2rem; /* para evitar que encoste nas bordas em telas menores */
+  padding: 2rem; /* to prevent it from touching the edges on smaller screens */
 }
 
-/* responsividade */
+/* responsiveness */
 #content {
   width: 100%;
-  max-width: 90rem; /* limite de largura máxima */
+  max-width: 90rem; /* maximum width limit */
 }
 
 .content-add-item {
@@ -55,7 +55,7 @@ h1 {
 
 #input-new-item:focus {
   border-color: #ca3884;
-  outline: none; /*remove o padrão da borda*/
+  outline: none; /* remove border pattern */
 }
 
 .btn-new-item {
@@ -105,7 +105,7 @@ li span {
   cursor: pointer;
 }
 
-/* add novo check - no conteúdo do label*/
+/* add new check - in span content */
 li span::before {
   content: "";
   width: 1.6rem;
@@ -117,6 +117,7 @@ li span::before {
   background: #fff;
 }
 
+/* makes the new check */
 li input:checked + span::before {
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='15' height='15' rx='5.5' fill='%23CA3884'/%3E%3Crect x='1' y='1' width='15' height='15' rx='5.5' stroke='%23CA3884'/%3E%3Cpath d='M5 9.5L6.75 11.25L12 5.75' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -173,10 +174,10 @@ button.remove {
 
 @media (max-width: 600px) {
   .content-add-item {
-    flex-direction: column; /* Coloca o input e botão em colunas em telas menores */
+    flex-direction: column; /* Place input and button in columns on smaller screens */
   }
 
   .btn-new-item {
-    width: 100%; /* Faz o botão ocupar toda a largura */
+    width: 100%; /* Makes the button take up the entire width */
   }
 }
