@@ -28,8 +28,8 @@ function newItem() {
 
     showValues();
   }
-   //clear input
-   input.value = "";
+  //clear input
+  input.value = "";
 }
 
 function validadeIfExistsNewItem() {
@@ -92,12 +92,11 @@ function showAlert() {
   const alertMessage = document.querySelector(".alert-message");
 
   // Add the 'open' class to show the alert
-  alertMessage.classList.add(".open");
+  alertMessage.classList.add("open");
 
   // Ensure visibility
   alertMessage.style.visibility = "visible";
   alertMessage.style.opacity = "1";
-
 
   // Hide the alert after 3 seconds
   setTimeout(() => {
@@ -109,15 +108,17 @@ function showAlert() {
 }
 
 // Function to close the alert when the close button is clicked
-document.querySelector(".alert-message .close").addEventListener("click", function () {
-  const alertMessage = document.querySelector(".alert-message");
-  
-  if (alertMessage) {
-    alertMessage.classList.remove("open");
-    alertMessage.style.visibility = "hidden";
-    alertMessage.style.opacity = "0";
-  }
-});
+document
+  .querySelector(".alert-message .close")
+  .addEventListener("click", function () {
+    const alertMessage = document.querySelector(".alert-message");
+
+    if (alertMessage) {
+      alertMessage.classList.remove("open");
+      alertMessage.style.visibility = "hidden";
+      alertMessage.style.opacity = "0";
+    }
+  });
 
 //keep items on page refresh
 showValues();
