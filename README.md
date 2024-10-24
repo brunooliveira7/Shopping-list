@@ -27,7 +27,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Adicionar e remove produtos, sendo que os itens podem ser marcados como comprados.
+Adicionar e remove produtos, sendo que os itens podem ser marcados como comprados. Estrutura responsiva para diferentes tamanhos de telas.
 
 ## 🔖 Layout
 
