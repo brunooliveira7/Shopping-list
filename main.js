@@ -94,16 +94,9 @@ function showAlert() {
   // Add the 'open' class to show the alert
   alertMessage.classList.add("open");
 
-  // Ensure visibility
-  alertMessage.style.visibility = "visible";
-  alertMessage.style.opacity = "1";
-
   // Hide the alert after 3 seconds
   setTimeout(() => {
     alertMessage.classList.remove("open");
-    // Reset visibility after closing
-    alertMessage.style.visibility = "hidden";
-    alertMessage.style.opacity = "0";
   }, 3000);
 }
 
@@ -115,8 +108,6 @@ document
 
     if (alertMessage) {
       alertMessage.classList.remove("open");
-      alertMessage.style.visibility = "hidden";
-      alertMessage.style.opacity = "0";
     }
   });
 

@@ -166,7 +166,7 @@ button.remove {
   cursor: pointer;
 }
 
-.alert-message .open {
+.open {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
